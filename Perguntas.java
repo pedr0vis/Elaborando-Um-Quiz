@@ -29,4 +29,41 @@ public class Perguntas {
 
     }
 
+    // Getters e Setters
+    public List<String> getOpcoes() {
+
+        return opcoes;
+
+    }
+
+    public void setOpcoes(List<String> opcoes) {
+
+        this.opcoes = opcoes;
+
+    }
+
+    public String getEnunciado() { 
+
+        return enunciado;
+
+    }
+
+    public void setEnunciado(String enunciado) {
+
+        this.enunciado = enunciado;
+
+    }
+
+    public int getRespostaCorreta() {
+
+        return respostaCorreta;
+    
+    }
+
+    public void setRespostaCorreta(int respostaCorreta) {
+
+        this.respostaCorreta = respostaCorreta;
+
+    }
+    
 }
