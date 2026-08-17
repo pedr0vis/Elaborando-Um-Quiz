@@ -15,4 +15,19 @@ public class Ranking {
         
     }
 
+    // Getter e Setter
+    public List<User> getUsuarios() {
+
+        return usuarios;
+
+    }
+
+    public void setUsuarios(List<User> usuariis) {
+
+        this.usuarios = usuarios;
+
+    }
+
+}
+
 
