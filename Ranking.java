@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Ranking {
@@ -32,8 +33,14 @@ public class Ranking {
         this.usuarios.add(user);
     }
 
+    public void ordenarRanking() {
+        usuarios.sort(Comparator.comparingInt(User::getPontuacao).reversed());
+    }
+
     // Método para exibir o ranking no console
     public void exibirRanking() {
+        ordenarRanking();
+
         System.out.println("\n========== RANKING GERAL ==========");
         if (usuarios == null || usuarios.isEmpty()) {
             System.out.println("Nenhum jogador registrado ainda.");
